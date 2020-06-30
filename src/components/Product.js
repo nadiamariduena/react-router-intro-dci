@@ -3,21 +3,9 @@ import { Link } from "react-router-dom";
 
 const Product = (props) => {
   const items = props.data.map((item) => {
-    const {
-      id,
-      productName,
-      url,
-      price,
-      inventory,
-      tags,
-      label,
-      link,
-      description,
-    } = item;
+    const { id, productName, url, price, tags, description } = item;
 
     return (
-      // ------------------
-      //
       <Link key={id} to={`/product/${id}`}>
         {/*  */}
 
@@ -35,6 +23,7 @@ const Product = (props) => {
           {/* ---- Btn ----- */}
         </li>
       </Link>
+
       //
       // ------------------
     );

@@ -22,9 +22,13 @@ const ProductInfo = (props) => {
     //
     //
     return (
-      <div key={id}>
-        <h3>{productName}</h3>
-        <img src={url} alt={tags} />
+      <div key={id} className="box-quote">
+        <h3 className="headline-productName">{productName}</h3>
+        <img className="img-box" src={url} alt={tags} />
+        <h4>{inventory}</h4>
+        <a href={link}>More info</a>
+        <h5>{label}</h5>
+        <p>{description}</p>
       </div>
     );
   });
