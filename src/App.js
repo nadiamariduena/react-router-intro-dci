@@ -16,7 +16,7 @@ import Soon from "./components/Soon";
 class App extends Component {
   render() {
     return (
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Menu />
         <h1>Online Store</h1>
         <Switch>
