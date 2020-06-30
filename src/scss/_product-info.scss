@@ -1,0 +1,13 @@
+.product-info {
+  width: 100vw;
+  height: 100vh;
+  background-color: seagreen;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h4 {
+    margin: 30px;
+  }
+}
